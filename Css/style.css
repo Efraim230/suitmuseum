@@ -1,0 +1,370 @@
+    /* background-image: url("/D:/Zoli bőrönd/Bőröndmúzeum/Images/munk1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ */
+
+*
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: #eeeeee;
+}
+
+#second-text
+{
+    color: #fd8f44;
+}
+::selection
+{
+color: var(--bg-color);
+background-color: var(--second-color);
+
+}
+
+:root
+{
+--container-color:#1a1e21;
+--second-color:#fd8f44;
+--text-color:#173217;
+--bg-color: #fff;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li
+{
+    list-style: none;
+}
+
+img
+{
+    width: 100%;
+}
+
+section
+{
+padding: 3rem 0 2rem;
+}
+
+.container
+{
+    max-width:max-content;
+    margin: auto;
+    width: 100%;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+}
+
+header.shadow
+{
+    background-color: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: 0.5s;
+}
+
+header.shadow .logo
+{
+    color: var(--text-color);
+}
+
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--bg-color);
+}
+
+.ez:hover
+{
+    text-shadow: 0 0 5px #fd8f44, 0 0 10px #000, 0 0 15px #fd8f44; 
+    transition: 0.2s all ease;
+}
+
+.logo2
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.logo2:hover
+{
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000; 
+    transition: 0.2s all ease;
+}
+
+.home
+{
+width: 100%;
+min-height: 440px;
+background: var(--container-color);
+display: grid;
+justify-content: center;
+align-items: center;
+}
+
+.home-text
+{
+color: var(--bg-color);
+text-align: center;
+
+}
+
+.home-title
+{
+    user-select: none;
+    font-size: 3.5rem;
+}
+
+.home-subtitle
+{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.post-filter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+
+.filter-item
+{
+font-size: 1rem;
+font-weight: 500;
+cursor: pointer;
+user-select: none;
+transition: all 0.2s ease;
+}
+
+.filter-item.clicked
+{
+background: #fd8f44;
+color: #fff;
+padding:  4px 10px;
+border-radius: 2px;
+}
+.filter-item:hover
+{
+    color: #d8793a;
+    border-radius: 4px;
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+}
+
+.suitcase-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem; 
+    color: #8B4513; 
+    text-align: center; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    padding: 20px; 
+    margin: 20px 0; 
+}
+
+.borond:hover
+{
+color: #d8793a;
+font-weight:450;
+    transition: all 0.2s ease;
+}
+
+p
+{
+    margin-left: 2px;
+    color: #8B4513; 
+    font-size: 1.3rem;
+}
+
+.alcim
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px; 
+    color: #8B4513; 
+    text-align: right;
+    border-bottom: 4px solid #D2691E; 
+}
+
+.please
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.bodymovinanim
+ { 
+    height: 1.5rem;
+    cursor: default;
+  }
+
+  .bodymovinanim2
+ { 
+    height: 1.5rem;
+    cursor: default;
+  }
+  
+
+.filter-item.clicked:hover
+{
+    background-color: #1a1e21;
+    color: #fd8f44;
+    transform: translateY(-2px);
+    padding: 4px 10px;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.footer
+{
+    background-color:rgb(216, 220, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+     align-items: center;
+     row-gap: 30px;
+    padding:20px 0; 
+    margin-top: 4%;
+}
+
+.footer p
+{
+    font-size: 5px;
+    
+}
+
+.social p
+{
+    font-size: 0.938rem;
+}
+.left
+{
+    font-size: 1rem;
+    color: black;
+
+}
+
+.efi
+{
+    font-size: 1rem;
+}
+
+.efi:hover
+{
+    color: #fd8f44;
+    text-shadow: #1a1e21 0px 1px 1px;
+    font-weight: 400;
+    cursor: default;
+    transform: translateY(-3px);
+    transition:all 0.2s ease;
+}
+
+.social
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+}
+
+.social p:hover
+{
+    cursor:default;
+}
+
+.social .bx
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.social .bx:hover
+{
+color: var(--second-color);
+transform: translateY(-2px);
+transition:all 0.2s ease;
+}
+
+/* changing text */
+
+
+.text
+{
+    font-size: 1.5rem;
+    user-select: none;
+    font-weight: 400;
+}
+
+
+
+.container .sec-text
+{position: relative;
+        color: #fd8f44;
+        overflow: hidden;
+}
+
+.text.sec-text:before
+{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #1a1e21;
+
+border-left: 2px solid #fd8f44;
+animation:  animate 4s steps(28) infinite;
+}
+
+
+@keyframes animate
+{
+    60%, 40%
+    {
+        left: calc(100% + 4px);
+    } 
+    100%
+    {
+        left: 0%;
+    }
+}
+
+
