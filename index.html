@@ -16,10 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  
     <title>Bőröndmúzeum</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js" defer></script>
+
 <body>
     <!-- header -->
      <header>
@@ -57,13 +58,16 @@
 <br>
 <p style="text-align: center;"> Projektismertető:</p>
 <p> „<span class="borond">Bőröndünk</span>” tartalma a jelen kortárs képzőművészet egy–egy eredeti, illetve digitalizált darabját rejti magában.
-Utazásunk során akár vasúton, kerékpáron, avagy gépkocsin jutunk el a bőrönd tartalmával az érdeklődő közösségekhez! <p> Foglalkozásunk során, játékos
-módon élményszerűen ismerkedünk a kortárs képzőművészet jelenségével, művészek által létrehozott tárgyakkal. Fogalmi ismeretek átadásán túl,
-manuális – játékos kézműves tevékenység során értelmeződik a bőröndből előkerülő kortárs mű. Az interaktív foglalkozás alkalmával, megismerhetünk
-különböző képzőművészeti technikákat is. </p></p>
+<br> Foglalkozásunk során, játékos módon élményszerűen ismerkedünk a kortárs művészet jelenségével, művészek által létrehozott tárgyakkal.
+    <br> Fogalmi ismeretek átadásán túl,
+ manuális – játékos kézműves tevékenység során értelmeződik a bőröndből előkerülő kortárs mű. Az interaktív foglalkozás alkalmával, 
+ megismerhetünk különböző képzőművészeti technikákat is.
+ <br> Cél az alkotás örömén túl, a kortárs képzőművészet megértésére, megszerettetésére
+  tett kísérlet és tudáshoz való jutás.                                                                                           </p>
 <p>
-Szívesen ajánlom a Kortárs művészet megismerésére, megértésére irányuló játékos foglalkozást - fiataloknak, idősöknek, családi közösségeknek,
-iskolai közösségeknek, intézményeknek, nyári tábor kiegészítő programjaként, ünnepi lét alkalmából rendezett eseményekre, falu és városnapok programjára is.
+    Szívesen ajánlom a Kortárs képzőművészet megismerésére irányuló játékos foglalkozást - fiataloknak, idősöknek, családi 
+    közösségeknek, iskolai közösségeknek, intézményeknek, nyári tábor kiegészítő programjaként, ünnepi lét alkalmából rendezett 
+    eseményekre, város és falunapok programjára egyaránt!
 </p>
 <br>
 <p>
@@ -226,5 +230,13 @@ lényeges eleme az élményszerzés, az ismeretek játékos elsajátítása.
     <!-- js link -->
     <script src="JS/main.js" defer></script>
 <script src="JS/lightbox-plus-jquery.min.js"></script>
+<script>
+    window.onload = function() {
+        if (!localStorage.getItem('refreshed')) {
+            localStorage.setItem('refreshed', 'true');
+            window.location.reload(); // Oldal frissítése
+        }
+    };
+    </script>
 </body>
 </html>
