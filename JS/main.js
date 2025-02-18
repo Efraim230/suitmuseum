@@ -1,3 +1,31 @@
+let ha = true;
+let lastLoadTime = sessionStorage.getItem("lastLoadTime");
+
+console.log("Előző betöltés ideje:", lastLoadTime);
+
+sessionStorage.setItem("lastLoadTime", new Date().toISOString());
+
+window.onload = function () {
+    if (!sessionStorage.getItem("reloaded")) {
+        sessionStorage.setItem("reloaded", "true");
+        ha = false;
+        setTimeout(() => {
+            location.reload();
+        }, 50);
+    } else {
+        ha = true;
+    }
+
+    console.log("Aktuális ha érték:", ha);
+
+    if (!ha) {
+        console.log("mukodik am");
+    } else {
+        console.log("nem megy");
+    }
+};
+
+//más dolgok
 let header = document.querySelector('header');
 
 window.addEventListener('scroll', () =>
@@ -109,3 +137,5 @@ window.addEventListener('scroll', () =>
       animationMenu2.setDirection(-directionMenu2);
       animationMenu2.play();
     });
+
+
